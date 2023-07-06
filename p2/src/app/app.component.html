@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-form-component (formSubmit)="formData = $event"></app-form-component>
+    </div>
+    <div class="col-md-6">
+      <app-data-component [formData]="formData"></app-data-component>
+    </div>
+  </div>
+</div>
